@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Kitty Beach is a fun short beach video game, feed kitties on the beach, 
+      retro-feel, features: drop coconuts, robot cats, defeat mighty Arch Cat! Built 
+      for Phaser Game Jam 2026 challenges ~ GitHub, Phaser, Playables, Wavedash."
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+      maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>Kitty Beach</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+    <meta name="screen-orientation" content="landscape" />
+    <meta name="x5-orientation" content="landscape" />
+    <meta name="orientation" content="landscape" />
+  </head>
+  <body>
+    <!-- Top Status Strip -->
+    <div id="top-strip">
+      Deliveries: <span id="meals-delivered">0</span>   Kitties Fed:
+      <span id="kitties-fed">0</span>  
+      <!-- <span id="kitty-title">Kitty</span> -->
+      <!-- <span style="color: #fafbfc">Optional Title</span> -->
+      <span id="kitty-title">Kitty Beach</span>
+         Rivals Captured: <span id="rivals-captured">0</span>   Level:
+      <span id="level">1</span>
+    </div>
+
+    <!-- Game Area -->
+    <div id="game-container"></div>
+
+    <!-- Left Kitty Meals -->
+    <div id="meals-left">
+      <div class="meal-icon" id="pate">🥩</div>
+      <div class="meal-label">Pâté</div>
+
+      <div class="meal-icon" id="salmon">🐟</div>
+      <div class="meal-label">Salmon Dinner</div>
+
+      <div class="meal-icon" id="turkey">🦃</div>
+      <div class="meal-label">Turkey Dinner</div>
+    </div>
+
+    <!-- Right Rusty Treats -->
+    <div id="meals-right">
+      <div class="meal-icon" id="cheese">🧀</div>
+      <div class="meal-label">Cheese</div>
+
+      <div class="meal-icon" id="peanut">🥜</div>
+      <div class="meal-label">Peanut Butter</div>
+
+      <div class="meal-icon" id="milk">🥛</div>
+      <div class="meal-label">Milk!</div>
+    </div>
+
+    <!-- Bottom Message Center + Buttons -->
+    <div id="bottom-strip">
+      <div
+        style="
+          display: flex;
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 30px;
+        "
+      >
+        <!-- Left Sound Button -->
+        <div id="sound-kitty" class="kitty-button">🔊</div>
+
+        <!-- Middle Message -->
+        <div id="message-center">Tap anywhere to start</div>
+
+        <!-- Right Fullscreen Button -->
+        <div id="fullscreen-kitty" class="kitty-button">⛶</div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
